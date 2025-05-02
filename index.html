@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoundFire - Ignite Your Sound</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green-primary: #00ff88;
+      --green-dark: #006644;
+      --bg-dark: #0e0e0e;
+      --text-light: #e0e0e0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+    }
+    header {
+      background-color: var(--green-dark);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      color: var(--green-primary);
+      font-size: 2rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero video {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    .section-title {
+      color: var(--green-primary);
+      text-align: center;
+      font-size: 2rem;
+      margin: 2rem 0 1rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 0 2rem 3rem;
+    }
+    .product-card {
+      background-color: #1e1e1e;
+      border: 2px solid var(--green-primary);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 0.5rem;
+    }
+    .product-card h3 {
+      margin: 0.5rem 0;
+    }
+    .product-card p {
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .product-card button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--green-primary);
+      border: none;
+      color: #000;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SoundFire</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Ignite Your Sound Experience</h2>
+    <video controls autoplay muted loop>
+      <source src="demo-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <h2 class="section-title" id="products">Top Products</h2>
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150?text=Headphones" alt="Headphones">
+      <h3>ProX Headphones</h3>
+      <p>High-fidelity wireless sound</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150?text=Earphones" alt="Earphones">
+      <h3>MiniBass Earphones</h3>
+      <p>Deep bass, compact design</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150?text=Soundbar" alt="Soundbar">
+      <h3>SonicBar 360</h3>
+      <p>Immersive 3D sound</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/220x150?text=RGB+Headset" alt="RGB Headset">
+      <h3>FireGlow RGB</h3>
+      <p>RGB gaming headset</p>
+      <button>Buy Now</button>
+    </div>
+  </section>
+</body>
+</html>
